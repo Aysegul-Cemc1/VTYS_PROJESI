@@ -21,7 +21,10 @@ namespace VTYS_PROJE
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            baglanti.Open();
+            SqlCommand komut1 = new SqlCommand("insert into parola (ad,sifre) values ('" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "')", baglanti);
+            komut1.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
