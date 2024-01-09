@@ -17,7 +17,7 @@ namespace VTYS_PROJE
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False")
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -27,6 +27,11 @@ namespace VTYS_PROJE
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //Ayşe deneme yapıyorrr
         }
     }
 }
