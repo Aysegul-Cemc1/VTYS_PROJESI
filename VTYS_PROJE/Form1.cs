@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace VTYS_PROJE
 {
@@ -15,6 +16,17 @@ namespace VTYS_PROJE
         public Form1()
         {
             InitializeComponent();
+        }
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False")
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
