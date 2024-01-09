@@ -28,5 +28,10 @@ namespace VTYS_PROJE
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //Ayşe deneme yapıyorrr
+        }
     }
 }
