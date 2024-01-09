@@ -17,7 +17,7 @@ namespace VTYS_PROJE
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False")
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False");
 
         private void button1_Click(object sender, EventArgs e)
         {
