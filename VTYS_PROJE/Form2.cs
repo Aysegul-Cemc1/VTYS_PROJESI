@@ -17,7 +17,7 @@ namespace VTYS_PROJE
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=proje;Integrated Security=True;Encrypt=False");
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=proje_ys;Integrated Security=True;Encrypt=False");
 
         private void buttonProjeEkle_Click(object sender, EventArgs e)
         {
@@ -29,6 +29,14 @@ namespace VTYS_PROJE
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonKayıtSifirla_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand sil = new SqlCommand("TRUNCATE TABLE proje", baglanti);
+            sil.ExecuteNonQuery();
+            baglanti.Close();
         }
     }
 }

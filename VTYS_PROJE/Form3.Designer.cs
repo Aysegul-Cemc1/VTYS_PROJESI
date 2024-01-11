@@ -78,9 +78,9 @@
             // buttonYeniProje
             // 
             this.buttonYeniProje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonYeniProje.Location = new System.Drawing.Point(273, 199);
+            this.buttonYeniProje.Location = new System.Drawing.Point(300, 199);
             this.buttonYeniProje.Name = "buttonYeniProje";
-            this.buttonYeniProje.Size = new System.Drawing.Size(236, 37);
+            this.buttonYeniProje.Size = new System.Drawing.Size(209, 37);
             this.buttonYeniProje.TabIndex = 6;
             this.buttonYeniProje.Text = "Yeni Proje Oluştur";
             this.buttonYeniProje.UseVisualStyleBackColor = true;
@@ -90,6 +90,7 @@
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(202, 95);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(307, 30);
@@ -99,6 +100,7 @@
             // 
             this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(202, 139);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(307, 30);

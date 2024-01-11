@@ -17,7 +17,7 @@ namespace VTYS_PROJE
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=guvenlik;Integrated Security=True;Encrypt=False");
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DELL2019\SQLEXPRESS;Initial Catalog=proje_ys;Integrated Security=True;Encrypt=False");
 
         private void buttonKayıtOl_Click(object sender, EventArgs e)
         {
@@ -26,8 +26,8 @@ namespace VTYS_PROJE
             komut1.ExecuteNonQuery();
             baglanti.Close();
             Form2 form2 = new Form2();
-            form2.ShowDialog();
-            this.Close();
+            form2.Show();
+            Hide();
         }
 
         private void buttonGirisYap_Click(object sender, EventArgs e)
@@ -49,6 +49,19 @@ namespace VTYS_PROJE
             {
                 MessageBox.Show("Kullanıcı adını ve şifrenizi kontrol ediniz.");
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonKayıtSifirla_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand sil = new SqlCommand("TRUNCATE TABLE parola", baglanti);
+            sil.ExecuteNonQuery();
+            baglanti.Close();
         }
     }
 }

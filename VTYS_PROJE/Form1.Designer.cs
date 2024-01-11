@@ -35,13 +35,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonKayıtSifirla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonKayıtOl
             // 
             this.buttonKayıtOl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonKayıtOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonKayıtOl.Location = new System.Drawing.Point(240, 249);
+            this.buttonKayıtOl.Location = new System.Drawing.Point(252, 249);
             this.buttonKayıtOl.Name = "buttonKayıtOl";
             this.buttonKayıtOl.Size = new System.Drawing.Size(105, 38);
             this.buttonKayıtOl.TabIndex = 0;
@@ -53,7 +54,7 @@
             // 
             this.buttonGirisYap.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonGirisYap.Location = new System.Drawing.Point(393, 249);
+            this.buttonGirisYap.Location = new System.Drawing.Point(418, 249);
             this.buttonGirisYap.Name = "buttonGirisYap";
             this.buttonGirisYap.Size = new System.Drawing.Size(105, 38);
             this.buttonGirisYap.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.LightGray;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(129, 59);
+            this.label1.Location = new System.Drawing.Point(133, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(520, 283);
             this.label1.TabIndex = 2;
@@ -108,12 +109,25 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Şifre:";
             // 
+            // buttonKayıtSifirla
+            // 
+            this.buttonKayıtSifirla.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonKayıtSifirla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonKayıtSifirla.Location = new System.Drawing.Point(656, 385);
+            this.buttonKayıtSifirla.Name = "buttonKayıtSifirla";
+            this.buttonKayıtSifirla.Size = new System.Drawing.Size(105, 53);
+            this.buttonKayıtSifirla.TabIndex = 7;
+            this.buttonKayıtSifirla.Text = "Kayıtları Sıfırla";
+            this.buttonKayıtSifirla.UseVisualStyleBackColor = false;
+            this.buttonKayıtSifirla.Click += new System.EventHandler(this.buttonKayıtSifirla_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(773, 450);
+            this.Controls.Add(this.buttonKayıtSifirla);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -123,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Giriş Yapınız";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +152,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonKayıtSifirla;
     }
 }
 
